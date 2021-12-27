@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(#353535, #000);
+}
+
+
+.grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  gap: 5%;
+  justify-content: center;
+  margin: 0 auto;
+}
+

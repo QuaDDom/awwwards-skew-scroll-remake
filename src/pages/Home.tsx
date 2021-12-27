@@ -2,10 +2,21 @@ import photos from '../data';
 import GridItem from '../components/GridItem';
 import '../styles/home.scss';
 import LocomotiveScroll from 'locomotive-scroll';
+import imagesLoaded from 'imagesloaded';
 import 'locomotive-scroll/src/locomotive-scroll.scss'
 import { MutableRefObject, useEffect, useRef } from 'react';
 
 const clamp = (value:number, min:number, max:number)=> value <= min ? min : value >= max ? max : value;
+
+const preload = (sel: any) => {
+    return new Promise((resolve) => {
+      imagesLoaded(
+        document.querySelectorAll(sel),
+        { background: true },
+        resolve
+      );
+    });
+  };
 
 export default function Home() {
     const ref = useRef(null);
@@ -39,9 +50,13 @@ export default function Home() {
             middleColumnRef.current.style.transform = `skewY(${clamp(-distance, -10, 10)}deg)`;
             rightColumnRef.current.style.transform = `skewY(${clamp(distance, -10, 10)}deg)`;
 
-        })
+        });
 
-    },[])
+        Promise.all([preload(".grid-item-media")]).then(() => {
+            scrollEl.update();
+        });
+
+    },[])   
 
 
     const leftChunk = [...photos].splice(0, 5);

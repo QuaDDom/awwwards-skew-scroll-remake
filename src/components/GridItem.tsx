@@ -1,4 +1,4 @@
-import './GridItem.scss';
+import './GridItem.scss'
 
 interface Props{
     url: string,

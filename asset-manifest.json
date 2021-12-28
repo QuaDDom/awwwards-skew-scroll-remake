@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/awwwards-skew-scroll-remake/static/css/main.9176927f.css",
-    "main.js": "/awwwards-skew-scroll-remake/static/js/main.e6e765bb.js",
+    "main.js": "/awwwards-skew-scroll-remake/static/js/main.7b89200b.js",
     "static/js/787.92f9e0c5.chunk.js": "/awwwards-skew-scroll-remake/static/js/787.92f9e0c5.chunk.js",
     "index.html": "/awwwards-skew-scroll-remake/index.html",
     "main.9176927f.css.map": "/awwwards-skew-scroll-remake/static/css/main.9176927f.css.map",
-    "main.e6e765bb.js.map": "/awwwards-skew-scroll-remake/static/js/main.e6e765bb.js.map",
+    "main.7b89200b.js.map": "/awwwards-skew-scroll-remake/static/js/main.7b89200b.js.map",
     "787.92f9e0c5.chunk.js.map": "/awwwards-skew-scroll-remake/static/js/787.92f9e0c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9176927f.css",
-    "static/js/main.e6e765bb.js"
+    "static/js/main.7b89200b.js"
   ]
 }

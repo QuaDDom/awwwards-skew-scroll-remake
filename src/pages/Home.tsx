@@ -35,7 +35,7 @@ export default function Home() {
             el: ref.current,
             smooth: true,
             smartphone: {
-                smooth: true
+                smooth: false,
             },
             getDirection: true,
             getSpeed: true

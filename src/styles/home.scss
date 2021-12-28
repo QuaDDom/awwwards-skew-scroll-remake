@@ -17,3 +17,8 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .grid-wrap{
+    grid-template-columns: repeat(3, 30%);
+  }
+}
